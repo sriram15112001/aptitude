@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY JAVASCRIPT TUTORIAL</title>
+    <meta charset="utf-8">
+    <style>
+        .whole_div{
+            margin: 30px;
+            border : solid 2px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a1 = 0;
+        function returnAnswer1(){
+            if(a1%2==0){
+                document.getElementById("answer1").innerHTML="ANSWER : C. 1941"
+                document.getElementById("explanation1").innerHTML ="EXPLANATION:<br>5 x 3 + 6 = 21<br>21 x 3 + 6 = 69<br>69 x 3 + 6 = 213<br>213 x 3 + 6 = 645<br>645 x 3 + 6 = 1941.<br>Therefore, the next number in the series is 1941."
+            }
+            else{
+                document.getElementById("answer1").innerHTML="";
+                document.getElementById("explanation1").innerHTML =""
+            }
+            a1 += 1;
+        }
+        var a2 = 0;
+        function returnAnswer2(){
+            if(a2%2==0){
+                document.getElementById("answer2").innerHTML="ANSWER : D. 442"
+                document.getElementById("explanation2").innerHTML ="EXPLANATION:<br>496 – 492 = 4 = 22<br>492 – 483 = 9 = 32<br>483 – 467 = 16 = 42<br>So, the next has to be a difference of 25 = 52<br>467 – 25 = 442<br>Therefore, the next number in the given series is 442."
+            }
+            else{
+                document.getElementById("answer2").innerHTML="";
+                document.getElementById("explanation2").innerHTML =""
+            }
+            a2 += 1;
+        }
+        var a3 = 0;
+        function returnAnswer3(){
+            if(a3%2==0){
+                document.getElementById("answer3").innerHTML="ANSWER : B. 89"
+                document.getElementById("explanation3").innerHTML ="EXPLANATION:<br>If we observe, In 8(97)6 we can have 97- 86 = 11<br>4(56)5 we can have 56 – 45 = 11<br>6(75)4 we can have 75 – 64 = 11<br>So, the difference is 11.<br>? – 78 = 11<br>Hence, ? = 78+11 = 89"
+            }
+            else{
+                document.getElementById("answer3").innerHTML="";
+                document.getElementById("explanation3").innerHTML =""
+            }
+            a3 += 1;
+        }
+        var a4 = 0;
+        function returnAnswer4(){
+            if(a4%2==0){
+                document.getElementById("answer4").innerHTML="ANSWER : A. (1/8)"
+                document.getElementById("explanation4").innerHTML ="EXPLANATION:<br>This is a simple division series; each number is one-half of the previous number. In other terms to say, the number is divided by 2 successively to get the next result.<br>2<br>2/2 = 1<br>1/2 = 1/2<br>(1/2)/2 = 1/4<br>(1/4)/2 = 1/8<br>So, ? is (1/8)."
+            }
+            else{
+                document.getElementById("answer4").innerHTML="";
+                document.getElementById("explanation4").innerHTML =""
+            }
+            a4 += 1;
+        }
+        var a5 = 0;
+        function returnAnswer5(){
+            if(a5%2==0){
+                document.getElementById("answer5").innerHTML="ANSWER :  D. 3.9"
+                document.getElementById("explanation5").innerHTML ="EXPLANATION:<br>However, In this simple addition series, each number increases by 0.8."
+            }
+            else{
+                document.getElementById("answer5").innerHTML="";
+                document.getElementById("explanation5").innerHTML =""
+            }
+            a5 += 1;
+        }
+    </script>
+    <div class="whole_div">
+        <center><h1>GENERAL APTITUDE</h1></center>
+        <p>1. 5, 21, 69, 213, 645, ?</p>
+        <ol type="a">
+            <li>1935</li>
+            <li>1815</li>
+            <li>1941</li>
+            <li>1290</li>
+        </ol>
+        <input type="button" onclick="returnAnswer1()" value="View Answer">
+        <br>
+        <br>
+        <span id="answer1"></span>
+        <br>
+        <p id="explanation1"></p>
+        <!-- ------------------------------------------------------------------------>
+        <p>2. 496, 492, 483, 467, ?</p>
+        <ol type="a">
+            <li>431</li>
+            <li>462</li>
+            <li>437</li>
+            <li>442</li>
+        </ol>
+        <input type="button" onclick="returnAnswer2()" value="View Answer">
+        <br>
+        <br>
+        <span id="answer2"></span>
+        <br>
+        <p id="explanation2"></p>
+        <!-- ------------------------------------------------------------------------>
+        <p>3. 8(97)6, 4(56)5, 6(75)4, 7(?)8</p>
+        <ol type="a">
+            <li>98</li>
+            <li>89</li>
+            <li>88</li>
+            <li>97</li>
+        </ol>
+        <input type="button" onclick="returnAnswer3()" value="View Answer">
+        <br>
+        <br>
+        <span id="answer3"></span>
+        <br>
+        <p id="explanation3"></p>
+        <!-- -------------------------------------------------------------------------->
+         <p>4. 2, 1, (1/2), (1/4), ?</p>
+        <ol type="a">
+            <li>(1/8)</li>
+            <li>(2/8)</li>
+            <li>(1/16)</li>
+            <li>(1/3)</li>
+        </ol>
+        <input type="button" onclick="returnAnswer4()" value="View Answer">
+        <br>
+        <br>
+        <span id="answer4"></span>
+        <br>
+        <p id="explanation4"></p>
+        <!-- ---------------------------------------------------------------------------->
+         <p>5. 1.5, 2.3, 3.1, ?, 4.7</p>
+        <ol type="a">
+            <li>3.2</li>
+            <li>3.4</li>
+            <li>3.7</li>
+            <li>3.9</li>
+        </ol>
+        <input type="button" onclick="returnAnswer5()" value="View Answer">
+        <br>
+        <br>
+        <span id="answer5"></span>
+        <br>
+        <p id="explanation5"></p>
+        <center><h3>SRI66</h3></center>
+    </div>
+</body>
+</html>
